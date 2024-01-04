@@ -19,7 +19,7 @@ from pycocotools import mask
 from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
 
-from openseed.utils import configurable
+from openseed.openseed.utils import configurable
 
 __all__ = ["RefCOCODatasetMapper"]
 

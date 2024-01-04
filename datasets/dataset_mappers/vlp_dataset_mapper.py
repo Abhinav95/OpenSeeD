@@ -18,8 +18,8 @@ from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
 from detectron2.data import MetadataCatalog
 
-from openseed.utils import configurable
-from openseed.language.LangEncoder import build_tokenizer
+from openseed.openseed.utils import configurable
+from openseed.openseed.language.LangEncoder import build_tokenizer
 
 
 __all__ = ["VLPreDatasetMapper"]

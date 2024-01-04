@@ -19,13 +19,13 @@ np.random.seed(1)
 import torch
 from torchvision import transforms
 
-from utils.arguments import load_opt_command
+from openseed.utils.arguments import load_opt_command
 
 from detectron2.data import MetadataCatalog
 from detectron2.utils.colormap import random_color
-from openseed.BaseModel import BaseModel
-from openseed import build_model
-from utils.visualizer import Visualizer
+from openseed.openseed.BaseModel import BaseModel
+from openseed.openseed import build_model
+from openseed.utils.visualizer import Visualizer
 
 
 logger = logging.getLogger(__name__)

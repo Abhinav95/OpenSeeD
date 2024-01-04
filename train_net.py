@@ -36,7 +36,7 @@ from detectron2.solver.build import maybe_add_gradient_clipping
 from detectron2.utils.logger import setup_logger
 from detectron2.config import LazyConfig, instantiate
 
-from utils.arguments import load_opt_command
+from openseed.utils.arguments import load_opt_command
 from detectron2.utils.comm import get_world_size, is_main_process
 
 # MaskDINO
@@ -59,8 +59,8 @@ from detectron2.engine import (
 )
 import weakref
 
-from openseed import build_model
-from openseed.BaseModel import BaseModel
+from openseed.openseed import build_model
+from openseed.openseed.BaseModel import BaseModel
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level = logging.INFO)
@@ -310,8 +310,8 @@ class Trainer(DefaultTrainer):
 
     @classmethod
     def test(cls, cfg, model, evaluators=None):
-        from utils.misc import hook_metadata, hook_switcher, hook_opt
-        from openseed.utils import get_class_names
+        from openseed.utils.misc import hook_metadata, hook_switcher, hook_opt
+        from openseed.openseed.utils import get_class_names
         from detectron2.utils.logger import log_every_n_seconds
         import datetime
         # build dataloade

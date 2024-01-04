@@ -13,7 +13,7 @@ import torch
 from PIL import Image
 
 from torchvision import transforms
-from openseed.utils import configurable
+from openseed.openseed.utils import configurable
 
 __all__ = ["ScanNetPanoDatasetMapper"]
 

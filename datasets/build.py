@@ -50,7 +50,7 @@ from .evaluation import (InstanceSegEvaluator,
                          SemSegEvaluator,
                          COCOPanopticEvaluator,
 )
-from openseed.utils import configurable
+from openseed.openseed.utils import configurable
 from detectron2.utils.comm import get_world_size
 from typing import Any, Dict, List, Set
 
